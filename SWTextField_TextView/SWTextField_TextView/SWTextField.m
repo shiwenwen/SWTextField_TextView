@@ -39,9 +39,11 @@
  */
 - (void)autoAdjustLayout:(NSNotification *)notification{
    
-    UIResponder *Responder =  [[UIApplication sharedApplication].keyWindow performSelector:@selector(firstResponder)];
+    UIResponder *responder =  [[UIApplication sharedApplication].keyWindow performSelector:@selector(firstResponder)];
     
-    if (![Responder isEqual:self]) {
+    
+    
+    if (![responder isEqual:self]) {
         
         //当前第一响应者不是自己 不处理
         
@@ -55,15 +57,30 @@
     }
     
     //键盘大小 高度
-    CGRect frame = [notification.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
+    CGRect frame = CGRectMake(0, 0, 0, 216);
+    if (notification.userInfo[UIKeyboardFrameEndUserInfoKey]) {
+        
+       frame = [notification.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
+        
+    }
     CGFloat height = frame.size.height;
     
     //获取键盘动画时间
-    CGFloat duration = [[notification.userInfo
-                         objectForKey:UIKeyboardAnimationDurationUserInfoKey] floatValue];
+    CGFloat duration = 0.25;
+    if ([notification.userInfo
+        objectForKey:UIKeyboardAnimationDurationUserInfoKey]) {
+        duration = [[notification.userInfo
+                     objectForKey:UIKeyboardAnimationDurationUserInfoKey] floatValue];
+    }
+    
     //获取键盘通动画类型
-    NSUInteger option = [[notification.userInfo
-                          objectForKey:UIKeyboardAnimationCurveUserInfoKey] integerValue];
+    NSInteger option = 0;
+    if ([notification.userInfo
+         objectForKey:UIKeyboardAnimationCurveUserInfoKey]) {
+        option = [[notification.userInfo
+                   objectForKey:UIKeyboardAnimationCurveUserInfoKey] integerValue];
+        
+    }
 
     //获取当前输入框相对于window的frame
     CGRect frameBaseOnWindow = [self.superview convertRect:self.frame toView:[UIApplication sharedApplication].keyWindow];

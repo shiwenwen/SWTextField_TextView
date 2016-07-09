@@ -35,9 +35,9 @@
  */
 - (void)autoAdjustLayout:(NSNotification *)notification{
     
-    UIView *Responder =  [[UIApplication sharedApplication].keyWindow performSelector:@selector(firstResponder)];
+    UIView *responder =  [[UIApplication sharedApplication].keyWindow performSelector:@selector(firstResponder)];
     
-    if (!([Responder isKindOfClass:[UITextField class]]||[Responder isKindOfClass:[UITextView class]])) {
+    if (!([responder isKindOfClass:[UITextField class]]||[responder isKindOfClass:[UITextView class]])) {
         
     //如果第一响应者不是输入框
         
@@ -52,18 +52,32 @@
     }
     
     //键盘大小 高度
-    CGRect frame = [notification.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
+    CGRect frame = CGRectMake(0, 0, 0, 216);
+    if (notification.userInfo[UIKeyboardFrameEndUserInfoKey]) {
+        
+        frame = [notification.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
+        
+    }
     CGFloat height = frame.size.height;
     
     //获取键盘动画时间
-    CGFloat duration = [[notification.userInfo
-                         objectForKey:UIKeyboardAnimationDurationUserInfoKey] floatValue];
-    //获取键盘通动画类型
-    NSUInteger option = [[notification.userInfo
-                          objectForKey:UIKeyboardAnimationCurveUserInfoKey] integerValue];
+    CGFloat duration = 0.25;
+    if ([notification.userInfo
+         objectForKey:UIKeyboardAnimationDurationUserInfoKey]) {
+        duration = [[notification.userInfo
+                     objectForKey:UIKeyboardAnimationDurationUserInfoKey] floatValue];
+    }
     
+    //获取键盘通动画类型
+    NSInteger option = 0;
+    if ([notification.userInfo
+         objectForKey:UIKeyboardAnimationCurveUserInfoKey]) {
+        option = [[notification.userInfo
+                   objectForKey:UIKeyboardAnimationCurveUserInfoKey] integerValue];
+        
+    }
     //获取当前输入框相对于window的frame
-    CGRect frameBaseOnWindow = [Responder.superview convertRect:Responder.frame toView:[UIApplication sharedApplication].keyWindow];
+    CGRect frameBaseOnWindow = [responder.superview convertRect:responder.frame toView:[UIApplication sharedApplication].keyWindow];
     
     //根据键盘调整变形
     [UIView animateKeyframesWithDuration:duration delay:0 options:option animations:^{

@@ -13,7 +13,8 @@
 @implementation UIView (AdjustLayoutWithKeyboard)
 - (void)dealloc
 {
-    [[NSNotificationCenter defaultCenter]removeObserver:self];
+//    [[NSNotificationCenter defaultCenter]removeObserver:self];//会引起无法抛出异常的偶然性崩溃 可以不写 在生命周期结束时通知是会被移除的
+    
 }
 -(void)openAdjustLayoutWithKeyboard{
     

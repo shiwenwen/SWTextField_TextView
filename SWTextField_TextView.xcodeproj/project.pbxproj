@@ -16,9 +16,9 @@
 		2B5709C91D30D613000B6530 /* SWTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5709C61D30D613000B6530 /* SWTextField.m */; };
 		2B5709CA1D30D613000B6530 /* SWTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5709C81D30D613000B6530 /* SWTextView.m */; };
 		2B5709CD1D30D66B000B6530 /* UIView+AdjustLayoutWithKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5709CC1D30D66B000B6530 /* UIView+AdjustLayoutWithKeyboard.m */; };
-		2B5709D01D30DB7A000B6530 /* TextFieldDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5709CF1D30DB7A000B6530 /* TextFieldDemo.m */; };
-		2B5709D31D30DB9A000B6530 /* TextViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5709D21D30DB9A000B6530 /* TextViewDemo.m */; };
-		2B5709D61D30DBA8000B6530 /* UIViewDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5709D51D30DBA8000B6530 /* UIViewDemoController.m */; };
+		8828ABF71D32712100E2EB3A /* TextFieldDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8828ABF61D32712100E2EB3A /* TextFieldDemoViewController.m */; };
+		8828ABFD1D32714700E2EB3A /* ViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8828ABFC1D32714700E2EB3A /* ViewDemoViewController.m */; };
+		8828AC001D3271BD00E2EB3A /* TextViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8828ABFF1D3271BD00E2EB3A /* TextViewDemoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,12 +38,12 @@
 		2B5709C81D30D613000B6530 /* SWTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWTextView.m; sourceTree = "<group>"; };
 		2B5709CB1D30D66B000B6530 /* UIView+AdjustLayoutWithKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AdjustLayoutWithKeyboard.h"; sourceTree = "<group>"; };
 		2B5709CC1D30D66B000B6530 /* UIView+AdjustLayoutWithKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AdjustLayoutWithKeyboard.m"; sourceTree = "<group>"; };
-		2B5709CE1D30DB7A000B6530 /* TextFieldDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldDemo.h; sourceTree = "<group>"; };
-		2B5709CF1D30DB7A000B6530 /* TextFieldDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldDemo.m; sourceTree = "<group>"; };
-		2B5709D11D30DB9A000B6530 /* TextViewDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewDemo.h; sourceTree = "<group>"; };
-		2B5709D21D30DB9A000B6530 /* TextViewDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewDemo.m; sourceTree = "<group>"; };
-		2B5709D41D30DBA8000B6530 /* UIViewDemoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewDemoController.h; sourceTree = "<group>"; };
-		2B5709D51D30DBA8000B6530 /* UIViewDemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewDemoController.m; sourceTree = "<group>"; };
+		8828ABF51D32712100E2EB3A /* TextFieldDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldDemoViewController.h; sourceTree = "<group>"; };
+		8828ABF61D32712100E2EB3A /* TextFieldDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldDemoViewController.m; sourceTree = "<group>"; };
+		8828ABFB1D32714700E2EB3A /* ViewDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewDemoViewController.h; sourceTree = "<group>"; };
+		8828ABFC1D32714700E2EB3A /* ViewDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewDemoViewController.m; sourceTree = "<group>"; };
+		8828ABFE1D3271BD00E2EB3A /* TextViewDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewDemoViewController.h; sourceTree = "<group>"; };
+		8828ABFF1D3271BD00E2EB3A /* TextViewDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewDemoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,12 +81,12 @@
 				2B5709B11D30D5F5000B6530 /* AppDelegate.m */,
 				2B5709B31D30D5F5000B6530 /* ViewController.h */,
 				2B5709B41D30D5F5000B6530 /* ViewController.m */,
-				2B5709CE1D30DB7A000B6530 /* TextFieldDemo.h */,
-				2B5709CF1D30DB7A000B6530 /* TextFieldDemo.m */,
-				2B5709D11D30DB9A000B6530 /* TextViewDemo.h */,
-				2B5709D21D30DB9A000B6530 /* TextViewDemo.m */,
-				2B5709D41D30DBA8000B6530 /* UIViewDemoController.h */,
-				2B5709D51D30DBA8000B6530 /* UIViewDemoController.m */,
+				8828ABF51D32712100E2EB3A /* TextFieldDemoViewController.h */,
+				8828ABF61D32712100E2EB3A /* TextFieldDemoViewController.m */,
+				8828ABFE1D3271BD00E2EB3A /* TextViewDemoViewController.h */,
+				8828ABFF1D3271BD00E2EB3A /* TextViewDemoViewController.m */,
+				8828ABFB1D32714700E2EB3A /* ViewDemoViewController.h */,
+				8828ABFC1D32714700E2EB3A /* ViewDemoViewController.m */,
 				2B5709B61D30D5F5000B6530 /* Main.storyboard */,
 				2B5709B91D30D5F5000B6530 /* Assets.xcassets */,
 				2B5709BB1D30D5F5000B6530 /* LaunchScreen.storyboard */,
@@ -148,6 +148,7 @@
 				TargetAttributes = {
 					2B5709A91D30D5F5000B6530 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = N5KSFY67W3;
 					};
 				};
 			};
@@ -187,14 +188,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B5709D01D30DB7A000B6530 /* TextFieldDemo.m in Sources */,
-				2B5709D61D30DBA8000B6530 /* UIViewDemoController.m in Sources */,
+				8828ABF71D32712100E2EB3A /* TextFieldDemoViewController.m in Sources */,
 				2B5709B51D30D5F5000B6530 /* ViewController.m in Sources */,
 				2B5709B21D30D5F5000B6530 /* AppDelegate.m in Sources */,
 				2B5709CA1D30D613000B6530 /* SWTextView.m in Sources */,
 				2B5709AF1D30D5F5000B6530 /* main.m in Sources */,
+				8828AC001D3271BD00E2EB3A /* TextViewDemoViewController.m in Sources */,
 				2B5709CD1D30D66B000B6530 /* UIView+AdjustLayoutWithKeyboard.m in Sources */,
-				2B5709D31D30DB9A000B6530 /* TextViewDemo.m in Sources */,
+				8828ABFD1D32714700E2EB3A /* ViewDemoViewController.m in Sources */,
 				2B5709C91D30D613000B6530 /* SWTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,11 +310,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SWTextField_TextView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sww.SWTextField-TextView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -321,11 +325,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SWTextField_TextView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sww.SWTextField-TextView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -348,6 +355,7 @@
 				2B5709C31D30D5F5000B6530 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

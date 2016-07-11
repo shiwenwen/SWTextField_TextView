@@ -19,19 +19,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-//    [self.view openAdjustLayoutWithKeyboard]; //开启自动调整
-//    
-//    CGFloat top = 70;
-//    for (int i =0 ; i< 6; i++) {
-//        
-//        UITextField *textField = [[UITextField alloc]initWithFrame:CGRectMake(50, top +((SCREEN_HEIGHT-140 - 5*30)/6+10)*i, SCREEN_WIDTH - 100, (SCREEN_HEIGHT-140-5*30)/6)];
-//        
-//        textField.placeholder = @"请输入";
-//        textField.borderStyle = UITextBorderStyleRoundedRect;
-//        [self.view addSubview:textField];
-//        
-//        
-//    }
+    [self.view openAdjustLayoutWithKeyboard]; //开启自动调整
+    
+    CGFloat top = 70;
+    for (int i =0 ; i< 6; i++) {
+        
+        UITextField *textField = [[UITextField alloc]initWithFrame:CGRectMake(50, top +((SCREEN_HEIGHT-140 - 5*30)/6+10)*i, SCREEN_WIDTH - 100, (SCREEN_HEIGHT-140-5*30)/6)];
+        
+        textField.placeholder = @"请输入";
+        textField.borderStyle = UITextBorderStyleRoundedRect;
+        [self.view addSubview:textField];
+        
+        
+    }
     
 
 }

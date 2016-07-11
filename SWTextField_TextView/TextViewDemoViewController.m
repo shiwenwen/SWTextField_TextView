@@ -19,17 +19,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    CGFloat top = 70;
-//    for (int i =0 ; i< 6; i++) {
-//        
-//        SWTextView *textField = [[SWTextView alloc]initWithFrame:CGRectMake(50, top +((SCREEN_HEIGHT-140 - 5*30)/6+10)*i, SCREEN_WIDTH - 100, (SCREEN_HEIGHT-140-5*30)/6)];
-//        
-//        textField.layer.cornerRadius = 5;
-//        textField.layer.borderColor = [UIColor grayColor].CGColor;
-//        textField.layer.borderWidth = 1;
-//        [self.view addSubview:textField];
-//        textField.autoAdjustLayoutView = self.view;
-//    }
+    CGFloat top = 70;
+    for (int i =0 ; i< 6; i++) {
+        
+        SWTextView *textField = [[SWTextView alloc]initWithFrame:CGRectMake(50, top +((SCREEN_HEIGHT-140 - 5*30)/6+10)*i, SCREEN_WIDTH - 100, (SCREEN_HEIGHT-140-5*30)/6)];
+        
+        textField.layer.cornerRadius = 5;
+        textField.layer.borderColor = [UIColor grayColor].CGColor;
+        textField.layer.borderWidth = 1;
+        [self.view addSubview:textField];
+        textField.autoAdjustLayoutView = self.view;
+    }
     
 }
 

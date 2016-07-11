@@ -11,11 +11,6 @@
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define KEYBOARD_OFFSET 5 //键盘与输入框的间隙
 @implementation UIView (AdjustLayoutWithKeyboard)
-- (void)dealloc
-{
-//    [[NSNotificationCenter defaultCenter]removeObserver:self];//会引起无法抛出异常的偶然性崩溃 可以不写 在生命周期结束时通知是会被移除的
-    
-}
 -(void)openAdjustLayoutWithKeyboard{
     
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(autoAdjustLayout:) name:UIKeyboardWillHideNotification object:nil];
